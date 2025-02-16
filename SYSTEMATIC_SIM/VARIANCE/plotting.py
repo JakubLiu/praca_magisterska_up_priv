@@ -17,7 +17,7 @@ plt.grid()
 plt.subplot(1,2,2)
 plt.gca().set_facecolor('papayawhip')
 plt.plot(df1.iloc[:,0], df1.iloc[:,2], color = 'red')
-plt.title("Mean of the empirical distribution of diff across the variance of the simulated data.", fontsize = 7)
+plt.title("Variance of the empirical distribution of diff across the variance of the simulated data.", fontsize = 7)
 plt.xlabel("Variance of simulated data")
 plt.ylabel("Empirical variance")
 plt.grid()
@@ -50,7 +50,7 @@ plt.show()
 
 # PLOT2_______________________________________________________________________________________
 df2 = pd.read_csv("Variance_median.txt")
-'''
+
 plt.subplot(1,2,1)
 plt.gca().set_facecolor('papayawhip')
 plt.plot(df2.iloc[:,0], df2.iloc[:,1], color = 'blue')
@@ -62,7 +62,7 @@ plt.grid()
 plt.subplot(1,2,2)
 plt.gca().set_facecolor('papayawhip')
 plt.plot(df2.iloc[:,0], df2.iloc[:,2], color = 'red')
-plt.title("Mean of the empirical distribution of diff across the variance of the simulated data.", fontsize = 7)
+plt.title("Variance of the empirical distribution of diff across the variance of the simulated data.", fontsize = 7)
 plt.xlabel("Variance of simulated data")
 plt.ylabel("Empirical variance")
 plt.grid()
@@ -92,11 +92,11 @@ plt.gcf().text(0.65, 0.65, text2, transform=plt.gcf().transFigure, fontsize=8,
 
 plt.show()
 
-'''
+
 
 
 # PLOT3_____________________________________________________________________________________________________________________________
-'''
+
 plt.subplot(1,2,1)
 plt.gca().set_facecolor('papayawhip')
 plt.plot(df1.iloc[:,0], df1.iloc[:,1], color = 'blue', label = 'mean')
@@ -111,11 +111,10 @@ plt.subplot(1,2,2)
 plt.gca().set_facecolor('papayawhip')
 plt.plot(df1.iloc[:,0], df1.iloc[:,2], color = 'blue', label = 'mean')
 plt.plot(df2.iloc[:,0], df2.iloc[:,2], color = 'red', label = 'median')
-plt.title("Mean of the empirical distribution of diff across the variance of the simulated data.", fontsize = 7)
+plt.title("Variance of the empirical distribution of diff across the variance of the simulated data.", fontsize = 7)
 plt.xlabel("Variance of simulated data")
 plt.ylabel("Empirical variance")
 plt.grid()
 plt.legend()
 
 plt.show()
-'''

@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 #PLOT 1__________________________________________________________________________________________________________________________
 df = pd.read_csv("C:/Users/Qba Liu/Documents/STUDIA/BIOINF_MASTER_UPWR/PRACA_MAGISTERSKA/SYSTEMATIC_SIM/OPTIMUM_SIM/NUM_PREDICTORS/NumPred_sim_mean.csv")
 
-'''
+
 plt.subplot(1,2,1)
 plt.gca().set_facecolor('papayawhip')
 plt.plot(df.iloc[:,0], df.iloc[:,1], color = 'blue')
@@ -17,7 +17,7 @@ plt.grid()
 plt.subplot(1,2,2)
 plt.gca().set_facecolor('papayawhip')
 plt.plot(df.iloc[:,0], df.iloc[:,2], color = 'red')
-plt.title("Mean of the empirical distribution of diff across the number of predictors.", fontsize = 10)
+plt.title("Variance of the empirical distribution of diff across the number of predictors.", fontsize = 10)
 plt.xlabel("Number of predictors")
 plt.ylabel("Empirical variance")
 plt.grid()
@@ -44,13 +44,13 @@ plt.gcf().text(0.65, 0.65, text2, transform=plt.gcf().transFigure, fontsize=8,
               verticalalignment='top', bbox=dict(facecolor='w', edgecolor='black', boxstyle='round,pad=1'))
 
 plt.show()
-'''
+
 #_____________________________________________________________________________________________________________________________________
 
 #PLOT2___________________________________________________________________________________________
 df2 = pd.read_csv("C:/Users/Qba Liu/Documents/STUDIA/BIOINF_MASTER_UPWR/PRACA_MAGISTERSKA/SYSTEMATIC_SIM/OPTIMUM_SIM/NUM_PREDICTORS/NumPred_sim_median.csv")
 
-'''
+
 plt.subplot(1,2,1)
 plt.gca().set_facecolor('papayawhip')
 plt.plot(df2.iloc[:,0], df2.iloc[:,1], color = 'blue')
@@ -62,7 +62,7 @@ plt.grid()
 plt.subplot(1,2,2)
 plt.gca().set_facecolor('papayawhip')
 plt.plot(df2.iloc[:,0], df2.iloc[:,2], color = 'red')
-plt.title("Mean of the empirical distribution of diff across the number of predictors.", fontsize = 10)
+plt.title("Variance of the empirical distribution of diff across the number of predictors.", fontsize = 10)
 plt.xlabel("Number of predictors")
 plt.ylabel("Empirical variance")
 plt.grid()
@@ -90,7 +90,7 @@ plt.gcf().text(0.65, 0.65, text2, transform=plt.gcf().transFigure, fontsize=8,
               verticalalignment='top', bbox=dict(facecolor='w', edgecolor='black', boxstyle='round,pad=1'))
 
 plt.show()
-'''
+
 #____________________________________________________________________________________________________________________________________
 
 # PLOT3_____________________________________________________________________________________________________________________________
@@ -109,7 +109,7 @@ plt.subplot(1,2,2)
 plt.gca().set_facecolor('papayawhip')
 plt.plot(df.iloc[:,0], df.iloc[:,2], color = 'blue', label = 'mean')
 plt.plot(df2.iloc[:,0], df2.iloc[:,2], color = 'red', label = 'median')
-plt.title("Mean of the empirical distribution of diff across the number of predictos.", fontsize = 10)
+plt.title("Variance of the empirical distribution of diff across the number of predictos.", fontsize = 10)
 plt.xlabel("Number of predictors")
 plt.ylabel("Empirical variance")
 plt.grid()
