@@ -51,7 +51,7 @@ p = 5
 noise_perc = 0.1
 n_iter_extension = 100
 n_iter_per_model_param = 100
-location_param = 'median'
+location_param = 'mean'
 num_cores = 60
 
 print('running on {} cores'.format(num_cores))
@@ -113,7 +113,7 @@ for i in range(0, len(param_of_interest)):
     tab[i,1] = np.mean(diffs)
     tab[i,2] = np.var(diffs)
 
-output_file_path = '/media/DANE/home/jliu/MASTER_THESIS/overfitting_remedy/SYSTEMATIC_SIM/OPTIMUM_SIM/HETEROSCEDASTICITY/Hetero_parallel_median.csv'
+output_file_path = '/media/DANE/home/jliu/MASTER_THESIS/overfitting_remedy/SYSTEMATIC_SIM/OPTIMUM_SIM/HETEROSCEDASTICITY/Hetero_parallel_mean.csv'
 np.savetxt(output_file_path, tab, delimiter=',')
 print('all done.')
 

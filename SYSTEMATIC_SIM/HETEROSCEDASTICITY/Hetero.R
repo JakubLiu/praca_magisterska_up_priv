@@ -6,7 +6,8 @@ source("/media/DANE/home/jliu/MASTER_THESIS/overfitting_remedy/mod.R")
 # the hetero_power parameter controls the power of the heteroscedasticity (higher parmeter values imply higher heteroscedasticity)
 hetero <- function(y, hetero_power){
     W <- sample(c(-1,1),1,replace=T)
-    noise <- y*hetero_power*W
+    noise_mean <- abs(y)*hetero_power*W
+    noise <- rnorm(1,noise_mean,1)
     y_new <- y + noise
     return(y_new)
 }
