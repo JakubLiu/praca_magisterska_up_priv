@@ -30,7 +30,7 @@ text1 = '\n'.join(["1.) For each number of iterations (n_iter) of the model exte
                   " MSE_orig: MSE of original model",
                   " MSE_boot: MSE of bootstrap model",
                   "",
-                  "2.) The sample size of the train and test data: n = 20"])
+                  "2.) The sample size of the train and test data: n = 500"])
 
 text2 = '\n'.join(["Parameters for running the",
                    "bootstrap model:",
@@ -77,7 +77,7 @@ text1 = '\n'.join(["1.) For each number of iterations (n_iter) of the model exte
                   " MSE_orig: MSE of original model",
                   " MSE_boot: MSE of bootstrap model",
                   "",
-                  "2.) The sample size of the train and test data: n = 20"])
+                  "2.) The sample size of the train and test data: n = 500"])
 
 text2 = '\n'.join(["Parameters for running the",
                    "bootstrap model:",
